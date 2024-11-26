@@ -268,7 +268,7 @@ body {
 }
 
 .service-content p {
-    font-size: 0.95rem;
+    font-size: 0.95rem; 
     color: #666;
     margin-bottom: 15px;
     line-height: 1.5; /* Espacement pour améliorer la lisibilité */
