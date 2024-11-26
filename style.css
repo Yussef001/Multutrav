@@ -1,0 +1,310 @@
+/* Ajustement pour éviter le chevauchement */
+body {
+    padding-top: calc(56px + 30px); /* Hauteur totale : navbar + bandeau */
+}
+
+/* Barre d'informations */
+.info-bar {
+    background-color: #d9e2ba; /* Couleur beige clair du logo */
+    color: #444; /* Texte en gris foncé */
+    font-size: 0.9rem;
+    border-bottom: 2px solid #869d4f; /* Ligne de séparation vert olive */
+    position: fixed; /* Fixer la barre d'informations en haut */
+    top: 0; /* Placer en haut de la page */
+    width: 100%; /* S'assurer qu'elle prend toute la largeur */
+    height: 30px; /* Hauteur définie pour éviter le chevauchement */
+    z-index: 1040; /* Au-dessus de la navbar */
+    line-height: 30px; /* Centrer verticalement les textes */
+}
+
+.info-bar span {
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.info-bar i {
+    margin-right: 5px; /* Espace entre l'icône et le texte */
+    font-size: 1rem; /* Taille des icônes */
+    color: #548b32; /* Couleur par défaut */
+}
+
+.info-bar i:hover {
+    color: #16dc13; /* Vert olive au survol */
+}
+
+/* Barre de navigation */
+.navbar {
+    position: fixed; /* Fixée en haut */
+    top: 30px; /* Positionnée sous le bandeau d'informations */
+    width: 100%; /* S'assurer qu'elle prend toute la largeur */
+    z-index: 1030; /* Moins élevé que le bandeau */
+    background-color: #ffffff; /* Fond blanc pour la lisibilité */
+    transition: background-color 0.3s ease; /* Effet visuel pour le scroll */
+}
+
+/* Style général pour la navbar */
+.navbar {
+    font-family: 'Poppins', sans-serif; /* Police spéciale */
+    background-color: #ffffff; /* Fond blanc */
+    border-bottom: 2px solid #869d4f; /* Ligne de séparation */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Effet fluide */
+}
+
+/* Logo et texte de la marque */
+.navbar-brand {
+    font-weight: 600;
+    color: #444; /* Couleur neutre */
+    text-decoration: none;
+}
+
+.navbar-brand .brand-text {
+    font-size: 1.2rem; /* Taille de la marque */
+    color: #869d4f; /* Vert olive (en lien avec le logo) */
+}
+
+/* Liens de navigation */
+.nav-link {
+    font-size: 1rem; /* Taille standard */
+    font-weight: 500;
+    color: #444; /* Gris foncé */
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition fluide */
+}
+
+/* Couleur au survol */
+.nav-link:hover {
+    color: #869d4f; /* Vert olive */
+    transform: scale(1.1); /* Légère mise en valeur */
+}
+
+/* Lien actif */
+.nav-link.active {
+    color: #869d4f; /* Vert olive */
+    font-weight: 600; /* Mise en valeur */
+    border-bottom: 2px solid #869d4f; /* Ligne élégante en bas */
+}
+
+/* Navbar en mode scroll */
+.navbar.scrolled {
+    background-color: #d9e2ba; /* Fond beige clair lors du scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+/* Bouton hamburger */
+.navbar-toggler {
+    border: none; /* Supprime la bordure par défaut */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'rgba%2866, 64, 64, 1%29\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E'); /* Icone personnalisée */
+    background-size: 20px 20px; /* Taille de l'icône */
+    filter: brightness(0.4); /* Légèrement plus sombre */
+    transition: filter 0.3s ease; /* Effet de survol fluide */
+}
+
+.navbar-toggler-icon:hover {
+    filter: brightness(0.8); /* Éclaircir l'icône au survol */
+}
+
+
+/* Section du carrousel */
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Images du carrousel */
+.carousel-item img {
+    object-fit: cover; /* Adapte l'image au conteneur */
+    height: 80vh; /* Hauteur du carrousel */
+}
+
+/* Texte des légendes */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animation de texte */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Boutons de navigation */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #869d4f; /* Vert olive */
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #5a7130; /* Vert foncé en hover */
+}
+
+/* Section "À propos de nous" */
+#about-message {
+    background-color: #f8f9fa; /* Fond léger */
+    color: #444; /* Texte en gris foncé */
+    font-family: 'Poppins', sans-serif; /* Police élégante */
+    line-height: 1.8; /* Amélioration de l'espacement entre les lignes */
+}
+
+/* Titre */
+#about-message h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a7130; /* Vert foncé inspiré du logo */
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* Ligne décorative sous le titre */
+#about-message h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #869d4f; /* Vert olive inspiré du logo */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Texte principal */
+#about-message p {
+    font-size: 1.1rem; /* Taille légèrement supérieure */
+    color: #555; /* Gris doux */
+    text-align: justify;
+}
+
+/* Mise en valeur des mots-clés */
+#about-message p strong {
+    color: #5a7130; /* Vert foncé pour les mots-clés */
+}
+
+/* Section Nos Services */
+#services {
+    background-color: #f8f9fa; /* Fond léger */
+    font-family: 'Poppins', sans-serif;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#services h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #869d4f; /* Vert olive */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Style des cartes */
+.service-card {
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+
+/* Image dans la carte */
+.service-card img {
+    width: 100%;
+    height: 150px; /* Taille fixe pour les images */
+    object-fit: cover; /* Garde les proportions des images */
+}
+
+/* Contenu de la carte */
+.service-content {
+    padding: 15px;
+}
+
+.service-content h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Bouton personnalisé */
+.btn-custom {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to top, #5a7130, #869d4f); /* Dégradé initial */
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #869d4f; /* Couleur de survol */
+    z-index: 1;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-custom:hover::before {
+    transform: translateY(-100%); /* Glisse de bas en haut */
+}
+
+.btn-custom:hover {
+    color: #fff; /* Maintient la couleur du texte blanche */
+}
+
+
+/* Masquer le bandeau d'informations sur les petits écrans */
+@media (max-width: 576px) {
+    .info-bar {
+        display: none; /* Le bandeau disparaît sur les écrans ≤ 576px */
+    }
+}
