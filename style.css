@@ -5,7 +5,7 @@ body {
 
 /* Barre d'informations */
 .info-bar {
-    background-color: #d9e2ba; /* Couleur beige clair du logo */
+    background-color: #cbd79d; /* Couleur beige clair du logo */
     color: #444; /* Texte en gris foncé */
     font-size: 0.9rem;
     border-bottom: 2px solid #869d4f; /* Ligne de séparation vert olive */
@@ -40,14 +40,14 @@ body {
     top: 30px; /* Positionnée sous le bandeau d'informations */
     width: 100%; /* S'assurer qu'elle prend toute la largeur */
     z-index: 1030; /* Moins élevé que le bandeau */
-    background-color: #ffffff; /* Fond blanc pour la lisibilité */
+    background-color: #dfcece; /* Fond blanc pour la lisibilité */
     transition: background-color 0.3s ease; /* Effet visuel pour le scroll */
 }
 
 /* Style général pour la navbar */
 .navbar {
     font-family: 'Poppins', sans-serif; /* Police spéciale */
-    background-color: #ffffff; /* Fond blanc */
+    background-color: #32342f67; /* Fond blanc */
     border-bottom: 2px solid #869d4f; /* Ligne de séparation */
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Effet fluide */
 }
@@ -341,7 +341,7 @@ body {
 
 /* Cartes Pourquoi nous choisir */
 .why-card {
-    background: #fff;
+    background: #e7e2e228;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -382,8 +382,162 @@ body {
 
 .why-card p {
     font-size: 0.95rem;
+    font-weight: bold;
     color: #666;
     line-height: 1.6;
+}
+
+/* Section Témoignages */
+/* Section Témoignages */
+#testimonials {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; /* Masque les témoignages en dehors de la vue */
+    position: relative;
+}
+
+/* Titre Témoignages avec soulignement */
+#testimonials h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #5a7130;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#testimonials h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #869d4f; /* Couleur verte */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* Conteneur principal */
+.testimonials-wrapper {
+    overflow: hidden; /* Cache les témoignages sortis du cadre */
+    position: relative;
+}
+
+/* Ligne déroulante des témoignages */
+.testimonials {
+    display: flex;
+    gap: 30px; /* Espacement entre les témoignages */
+    animation: slide 15s linear infinite; /* Animation continue */
+}
+
+/* Témoignage individuel */
+.testimonial {
+    flex: 0 0 300px; /* Chaque témoignage a une largeur fixe */
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Texte des témoignages */
+.testimonial p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Nom de l'auteur */
+.testimonial h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #5a7130;
+}
+
+/* Animation pour le défilement */
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pied de page */
+#footer {
+    background-color: #333; /* Fond sombre */
+    color: #ddd; /* Texte légèrement clair */
+    font-family: 'Poppins', sans-serif;
+}
+
+#footer h5 {
+    font-size: 1.2rem;
+    color: #fff; /* Titre blanc */
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Ligne en dessous des titres */
+#footer h5::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #869d4f; /* Vert olive */
+    margin-top: 5px;
+    border-radius: 2px; /* Coins arrondis */
+}
+
+/* Supprimer la ligne au-dessus de "Suivez-nous" */
+#footer .social-icons {
+    margin-top: 10px; /* Ajout d'espace sans ligne */
+}
+
+/* Texte et paragraphes */
+#footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Icônes de réseaux sociaux */
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Couleurs au survol */
+.social-icons a:hover {
+    text-decoration: none;
+}
+
+.social-icons a:hover i.bi-facebook {
+    color: #3b5998; /* Bleu Facebook */
+}
+
+.social-icons a:hover i.bi-twitter {
+    color: #1da1f2; /* Bleu Twitter */
+}
+
+.social-icons a:hover i.bi-instagram {
+    color: #e4405f; /* Dégradé Instagram */
+}
+
+.social-icons a:hover i.bi-linkedin {
+    color: #0077b5; /* Bleu LinkedIn */
+}
+
+.social-icons a:hover i.bi-whatsapp {
+    color: #25d366; /* Vert WhatsApp */
+}
+
+/* Texte de copyright */
+#footer .text-center {
+    border-top: 1px solid #444; /* Ligne de séparation */
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #bbb;
 }
 
 
