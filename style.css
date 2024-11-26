@@ -314,6 +314,78 @@ body {
     color: #fff; /* Maintient la couleur du texte blanche */
 }
 
+/* Section Pourquoi nous choisir */
+#why-choose-us {
+    background-color: #f8f9fa; /* Fond léger */
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}
+
+/* Titre */
+#why-choose-us h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #5a7130;
+    position: relative;
+}
+
+#why-choose-us h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #869d4f;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Cartes Pourquoi nous choisir */
+.why-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icônes dans les cartes */
+.icon-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #d9e2ba; /* Fond vert clair */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Texte des cartes */
+.why-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5a7130; /* Vert foncé */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
 
 /* Masquer le bandeau d'informations sur les petits écrans */
 @media (max-width: 576px) {
