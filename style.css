@@ -465,6 +465,96 @@ body {
     }
 }
 
+/* Section localisation */
+#location {
+    font-family: 'Poppins', sans-serif;
+}
+
+#location h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #5a7130; /* Vert foncé */
+    position: relative;
+}
+
+#location h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #869d4f; /* Vert olive */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Informations de localisation */
+#location h5 {
+    font-size: 1.2rem;
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 1rem;
+}
+
+#location p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#location i {
+    color: #869d4f; /* Vert olive pour les icônes */
+    margin-right: 10px;
+}
+
+/* Carte intégrée */
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+}
+
+/* Boutons fixes */
+.fixed-btn {
+    position: fixed;
+    z-index: 1050; /* Toujours visible au-dessus des autres éléments */
+}
+
+#back-to-top {
+    bottom: 20px; /* Placé en bas à droite */
+    right: 20px;
+}
+
+/* Style des boutons */
+.btn {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #869d4f; /* Couleur verte */
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #5a7130; /* Couleur verte foncée au survol */
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+.btn-scroll-top i {
+    font-size: 1.5rem;
+}
+
+/* Masquer le bouton "Remonter en haut" initialement */
+#back-to-top {
+    display: none; /* Cacher par défaut */
+}
+
+
+
 /* Pied de page */
 #footer {
     background-color: #333; /* Fond sombre */
