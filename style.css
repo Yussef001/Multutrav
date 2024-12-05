@@ -523,35 +523,6 @@ body {
     right: 20px;
 }
 
-/* Style des boutons */
-.btn {
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #869d4f; /* Couleur verte */
-    color: #fff;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-    background-color: #5a7130; /* Couleur verte foncée au survol */
-    transform: scale(1.1); /* Zoom léger au survol */
-}
-
-.btn-scroll-top i {
-    font-size: 1.5rem;
-}
-
-/* Masquer le bouton "Remonter en haut" initialement */
-#back-to-top {
-    display: none; /* Cacher par défaut */
-}
 
 
 
@@ -636,4 +607,79 @@ body {
     .info-bar {
         display: none; /* Le bandeau disparaît sur les écrans ≤ 576px */
     }
+}
+
+
+/* Carrousel */
+#about-carousel .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+#about-carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+/* Section Nos missions */
+#our-mission {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+#our-mission h2 {
+    font-size: 2.5rem;
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 1rem;
+}
+
+#our-mission p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#our-mission ul {
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#our-mission ul li {
+    margin-bottom: 10px;
+}
+
+/* Section Nos activités */
+#our-activities {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Fond léger pour contraste */
+    line-height: 1.8;
+}
+
+#our-activities h2 {
+    font-size: 2.5rem;
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 1rem;
+}
+
+#our-activities p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#our-activities ul {
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#our-activities ul li {
+    margin-bottom: 10px;
+}
+
+/* Image */
+#our-activities img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
