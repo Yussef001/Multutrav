@@ -107,6 +107,12 @@ body {
     filter: brightness(0.8); /* Éclaircir l'icône au survol */
 }
 
+.nav-link.active {
+    color: #869d4f; /* Vert olive */
+    font-weight: 600; /* Mise en valeur */
+    border-bottom: 2px solid #869d4f; /* Ligne élégante en bas */
+}
+
 
 /* Section du carrousel */
 #home {
@@ -682,4 +688,127 @@ body {
 #our-activities img {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Section Notre Équipe */
+#team {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Fond léger */
+}
+
+#team h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 1rem;
+}
+
+#team h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #869d4f; /* Vert olive */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Cadre de chaque membre */
+.team-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding-bottom: 20px;
+}
+
+/* Image du membre */
+.team-card img {
+    width: 100%;
+    height: 300px; /* Hauteur uniforme */
+    object-fit: cover; /* Garde les proportions */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Icônes de réseaux sociaux */
+.team-card .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.team-card .social-icons a {
+    color: #444;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.team-card .social-icons a:hover {
+    transform: scale(1.1); /* Légère mise en valeur */
+}
+
+.team-card .social-icons a i.bi-whatsapp:hover {
+    color: #25d366; /* Couleur verte de WhatsApp */
+}
+
+.team-card .social-icons a i.bi-facebook:hover {
+    color: #3b5998; /* Bleu Facebook */
+}
+
+.team-card .social-icons a i.bi-linkedin:hover {
+    color: #0077b5; /* Bleu LinkedIn */
+}
+
+/* Carrousel */
+#services-carousel .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+#services-carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+/* Section Nos Services */
+#our-services h2 {
+    font-size: 2.5rem;
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 1rem;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h5 {
+    color: #5a7130; /* Vert foncé */
+    margin-bottom: 10px;
+}
+
+/* Section CTA */
+#cta {
+    background: #5a7130; /* Vert foncé */
+    color: #fff;
+}
+
+#cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }

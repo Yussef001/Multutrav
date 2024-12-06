@@ -20,3 +20,25 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Remonter en douceur
 });
+
+// Fonction pour détecter la section visible et marquer l'onglet actif
+function updateActiveNav() {
+    const sections = document.querySelectorAll('section'); // Sélectionne toutes les sections
+    const navLinks = document.querySelectorAll('.nav-link'); // Sélectionne tous les liens de navigation
+
+    let index = sections.length;
+
+    while (--index && window.scrollY + 150 < sections[index].offsetTop) {}
+    
+    // Supprime la classe active de tous les liens
+    navLinks.forEach((link) => link.classList.remove('active'));
+
+    // Ajoute la classe active au lien correspondant
+    navLinks[index].classList.add('active');
+}
+
+// Écoute les événements de scroll pour mettre à jour les liens
+window.addEventListener('scroll', updateActiveNav);
+
+// Appelle la fonction au chargement pour définir l'état initial
+updateActiveNav();
