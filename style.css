@@ -777,13 +777,13 @@ body {
 }
 
 /* Section Nos Services */
-#our-services h2 {
+#our-servicess h2 {
     font-size: 2.5rem;
     color: #5a7130; /* Vert foncé */
     margin-bottom: 1rem;
 }
 
-.service-card {
+.services-card {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -792,12 +792,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover {
+.services-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.service-card h5 {
+.services-card h5 {
     color: #5a7130; /* Vert foncé */
     margin-bottom: 10px;
 }
