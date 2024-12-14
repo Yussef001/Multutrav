@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr,en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,16 +44,17 @@
             <!-- Liens de navigation -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">À propos de nous</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Nos services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home" data-i18n="navHome">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="navAbout">À propos de nous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="navServices">Nos services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="navContact">Contact</a></li>
                 </ul>
-                <select id="languageSelector" class="form-select w-auto d-inline-block">
+                <!-- Sélecteur de langue -->
+                <select id="languageSelector" class="form-select w-auto d-inline-block ms-3">
                     <option value="fr">Français</option>
                     <option value="en">English</option>
                 </select>
-            </div>
+            </div>            
         </div>
     </nav>
     <section id="home" class="pt-5 mt-5">
@@ -71,107 +72,109 @@
                 <div class="carousel-item active">
                     <img src="carousel1.jpg" class="d-block w-100" alt="Image 1">
                     <div class="carousel-caption">
-                        <h5>Bienvenue chez MULTITRAV</h5>
-                        <p>Votre partenaire de confiance en service agricole.</p>
-                    </div>
+                        <h5 data-i18n="carouselTitle">Bienvenue chez MULTITRAV</h5>
+                        <p data-i18n="carouselText">Votre partenaire de confiance en service agricole.</p>
+                    </div>                    
                 </div>
                 <div class="carousel-item">
                     <img src="carousel2.jpg" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption">
-                        <h5>Des services adaptés à vos besoins</h5>
-                        <p>Nous garantissons qualité et efficacité.</p>
-                    </div>
+                        <h5 data-i18n="carouselTitle2">Des services adaptés à vos besoins</h5>
+                        <p data-i18n="carouselText2">Nous garantissons qualité et efficacité.</p>
+                    </div>                    
                 </div>
                 <div class="carousel-item">
                     <img src="carousel3.jpg" class="d-block w-100" alt="Image 3">
                     <div class="carousel-caption">
-                        <h5>Contactez-nous dès aujourd'hui</h5>
-                        <p>Nous sommes à votre disposition pour vos projets.</p>
-                    </div>
+                        <h5 data-i18n="carouselTitle3">Contactez-nous dès aujourd'hui</h5>
+                        <p data-i18n="carouselText3">Nous sommes à votre disposition pour vos projets.</p>
+                    </div>                    
                 </div>
                 <div class="carousel-item">
                     <img src="carousel4.jpg" class="d-block w-100" alt="Image 3">
                     <div class="carousel-caption">
-                        <h5>Besoin de produits de qualité ?</h5>
-                        <p>N'attendez plus ! Contactez-nous maintenant.</p>
-                    </div>
+                        <h5 data-i18n="carouselTitle4">Besoin de produits de qualité ?</h5>
+                        <p data-i18n="carouselText4">N'attendez plus ! Contactez-nous maintenant.</p>
+                    </div>                    
                 </div>
             </div>
     
             <!-- Boutons de navigation -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Précédent</span>
+                <span class="visually-hidden" data-i18n="previous">Précédent</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Suivant</span>
+                <span class="visually-hidden" data-i18n="next">Suivant</span>
             </button>
         </div>
     </section>
     
     <section id="about-message" class="py-5 bg-light">
         <div class="container text-center">
-            <h2 class="mb-4" style="font-weight: bold; color: #5a7130;">une sélection de denrées agricoles de qualité</h2>
-            <p class="lead mx-auto" style="max-width: 800px;">
+            <h2 class="mb-4" style="font-weight: bold; color: #5a7130;" data-i18n="qualitySelectionTitle">
+                Une sélection de denrées agricoles de qualité
+            </h2>
+            <p class="lead mx-auto" style="max-width: 800px;" data-i18n="qualitySelectionText">
                 Depuis près d'une décennie, nous sommes spécialisés dans la commercialisation de denrées de qualité telles que le <strong>mil, le riz, le sorgho, le sésame, le haricot, l'arachide, l'anacarde, le maïs, le soja et le karité</strong>, au service des producteurs et des transformateurs. <br><br>
                 Nos produits répondent aux normes élevées en matière d'agriculture durable et de qualité.
             </p>
-        </div>
+        </div>             
     </section>
     <section id="services" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4" style="font-weight: bold; color: #5a7130;">Nous offrons</h2>
+            <h2 class="text-center mb-4" style="font-weight: bold; color: #5a7130;" data-i18n="offerTitle">Nous offrons</h2>
             <!-- Première rangée de 5 colonnes -->
             <div class="row mb-4">
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="anacarde.jpg" alt="Service 1" class="img-fluid">
                         <div class="service-content">
-                            <h5>Anacarde</h5>
-                            <p>Des noix de cajou croquantes et savoureuses</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceAnacardeTitle">Anacarde</h5>
+                            <p data-i18n="serviceAnacardeDescription">Des noix de cajou croquantes et savoureuses</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="arachide.jpg" alt="Service 2" class="img-fluid">
                         <div class="service-content">
-                            <h5>Arachide</h5>
-                            <p>Des arachides de première qualité</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceArachideTitle">Arachide</h5>
+                            <p data-i18n="serviceArachideDescription">Des arachides de première qualité</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="haricot.jpg" alt="Service 2" class="img-fluid">
                         <div class="service-content">
-                            <h5>Haricot</h5>
-                            <p>Des haricots nutritifs et savoureux</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceHaricotTitle">Haricot</h5>
+                            <p data-i18n="serviceHaricotDescription">Des haricots nutritifs et savoureux</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                                              
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="karite.jpg" alt="Service 2" class="img-fluid">
                         <div class="service-content">
-                            <h5>Karité</h5>
-                            <p>Un karité pur et naturel</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceKariteTitle">Karité</h5>
+                            <p data-i18n="serviceKariteDescription">Un karité pur et naturel</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="maïs.jpg" alt="Service 2" class="img-fluid">
                         <div class="service-content">
-                            <h5>Maïs</h5>
-                            <p>Un maïs tendre et de qualité</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceMaisTitle">Maïs</h5>
+                            <p data-i18n="serviceMaisDescription">Un maïs tendre et de qualité</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <!-- Répétez pour 5 colonnes -->
@@ -183,50 +186,50 @@
                     <div class="service-card">
                         <img src="mil.jpg" alt="Service 6" class="img-fluid">
                         <div class="service-content">
-                            <h5>Mil</h5>
-                            <p>Un mil riche en nutriments</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceMilTitle">Mil</h5>
+                            <p data-i18n="serviceMilDescription">Un mil riche en nutriments</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="riz.jpg" alt="Service 7" class="img-fluid">
                         <div class="service-content">
-                            <h5>Riz</h5>
-                            <p>Un riz de qualité supérieure</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceRizTitle">Riz</h5>
+                            <p data-i18n="serviceRizDescription">Un riz de qualité supérieure</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="sesame.jpg" alt="Service 7" class="img-fluid">
                         <div class="service-content">
-                            <h5>Sesame</h5>
-                            <p>Des graines de qualité</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceSesameTitle">Sesame</h5>
+                            <p data-i18n="serviceSesameDescription">Des graines de qualité</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="soja.jpg" alt="Service 7" class="img-fluid">
                         <div class="service-content">
-                            <h5>Soja</h5>
-                            <p>Un soja riche en protéines</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceSojaTitle">Soja</h5>
+                            <p data-i18n="serviceSojaDescription">Un soja riche en protéines</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-2 mx-auto mb-4">
                     <div class="service-card">
                         <img src="sorgho.jpg" alt="Service 7" class="img-fluid">
                         <div class="service-content">
-                            <h5>Sorgho</h5>
-                            <p>Du sorgho de qualité</p>
-                            <button class="btn btn-custom">En savoir plus</button>
-                        </div>
+                            <h5 data-i18n="serviceSorghoTitle">Sorgho</h5>
+                            <p data-i18n="serviceSorghoDescription">Du sorgho de qualité</p>
+                            <button class="btn btn-custom" data-i18n="learnMoreButton">En savoir plus</button>
+                        </div>                        
                     </div>
                 </div>
                 <!-- Répétez pour 5 colonnes -->
@@ -236,7 +239,7 @@
     
     <section id="why-choose-us" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5" style="font-weight: bold; color: #5a7130;">Pourquoi nous choisir ?</h2>
+            <h2 class="text-center mb-5" style="font-weight: bold; color: #5a7130;" data-i18n="whyChooseTitle">Pourquoi nous choisir ?</h2>
             <div class="row">
                 <!-- Exemple de raison -->
                 <div class="col-md-4 mb-4">
@@ -244,8 +247,8 @@
                         <div class="icon-container mb-3">
                             <img src="quality.png" alt="Qualité" class="icon">
                         </div>
-                        <h5>Qualité supérieure</h5>
-                        <p>Nos produits respectent les normes les plus strictes en matière d'agriculture durable.</p>
+                        <h5 data-i18n="qualitySuperiorTitle">Qualité supérieure</h5>
+                        <p data-i18n="qualitySuperiorDescription">Nos produits respectent les normes les plus strictes en matière d'agriculture durable.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -253,8 +256,8 @@
                         <div class="icon-container mb-3">
                             <img src="fiabilite.png" alt="Fiabilité" class="icon">
                         </div>
-                        <h5>Fiabilité</h5>
-                        <p>Avec près d'une décennie d'expérience, nous sommes un partenaire de confiance.</p>
+                        <h5 data-i18n="reliabilityTitle">Fiabilité</h5>
+                        <p data-i18n="reliabilityDescription">Avec près d'une décennie d'expérience, nous sommes un partenaire de confiance.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -262,8 +265,8 @@
                         <div class="icon-container mb-3">
                             <img src="commitment.png" alt="Engagement" class="icon">
                         </div>
-                        <h5>Engagement</h5>
-                        <p>Nous nous engageons pleinement à soutenir les producteurs et les transformateurs locaux avec passion.</p>
+                        <h5 data-i18n="commitmentTitle">Engagement</h5>
+                        <p data-i18n="commitmentDescription">Nous nous engageons pleinement à soutenir les producteurs et les transformateurs locaux avec passion.</p>
                     </div>
                 </div>
             </div>
@@ -272,34 +275,34 @@
     
     <section id="testimonials" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4" style="font-weight: bold; color: #5a7130;">TEMOIGNAGES</h2>
+            <h2 class="text-center mb-4" style="font-weight: bold; color: #5a7130;" data-i18n="testimonialsTitle">TEMOIGNAGES</h2>
             <div class="testimonials-wrapper">
                 <div class="testimonials">
                     <!-- Témoignage 1 -->
                     <div class="testimonial">
-                        <p>"Un service exceptionnel ! Grâce à MULTITRAV, j'ai trouvé des produits de qualité répondant à mes besoins."</p>
-                        <h5>- Moussa SAWADOGO</h5>
-                    </div>
+                        <p data-i18n="testimonialText">"Un service exceptionnel ! Grâce à MULTITRAV, j'ai trouvé des produits de qualité répondant à mes besoins."</p>
+                        <h5 data-i18n="testimonialAuthor">- Moussa SAWADOGO</h5>
+                    </div>                    
                     <!-- Témoignage 2 -->
                     <div class="testimonial">
-                        <p>"La fiabilité et la rapidité de leurs services sont incroyables. Je recommande vivement !"</p>
-                        <h5>- Adama OUEDRAOGO</h5>
-                    </div>
+                        <p data-i18n="testimonialText2">"La fiabilité et la rapidité de leurs services sont incroyables. Je recommande vivement !"</p>
+                        <h5 data-i18n="testimonialAuthor2">- Adama OUEDRAOGO</h5>
+                    </div>                    
                     <!-- Témoignage 3 -->
                     <div class="testimonial">
-                        <p>"Des produits conformes aux normes avec un excellent rapport qualité-prix. Une équipe très professionnelle."</p>
-                        <h5>- Ali Traoré</h5>
-                    </div>
+                        <p data-i18n="testimonialText3">"Des produits conformes aux normes avec un excellent rapport qualité-prix. Une équipe très professionnelle."</p>
+                        <h5 data-i18n="testimonialAuthor3">- Ali Traoré</h5>
+                    </div>                    
                     <!-- Témoignage 4 -->
                     <div class="testimonial">
-                        <p>"Des produits conformes aux normes avec un excellent rapport qualité-prix. Une équipe très professionnelle."</p>
-                        <h5>- Loukmane KOUANDA</h5>
-                    </div>
+                        <p data-i18n="testimonialText4">"Des produits conformes aux normes avec un excellent rapport qualité-prix. Une équipe très professionnelle."</p>
+                        <h5 data-i18n="testimonialAuthor4">- Loukmane KOUANDA</h5>
+                    </div>                    
                     <!-- Témoignage 5 -->
                     <div class="testimonial">
-                        <p>"Des produits conformes aux normes avec un excellent rapport qualité-prix. Une équipe très professionnelle."</p>
-                        <h5>- Ibrahim SANFO</h5>
-                    </div>
+                        <p data-i18n="testimonialText5">"Des produits conformes aux normes avec un excellent rapport qualité-prix. Une équipe très professionnelle."</p>
+                        <h5 data-i18n="testimonialAuthor5">- Ibrahim SANFO</h5>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -307,18 +310,18 @@
 
     <section id="location" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4" style="font-weight: bold; color: #5a7130;"> Localisation</h2>
+            <h2 class="text-center mb-4" style="font-weight: bold; color: #5a7130;" data-i18n="localisationTitle">Localisation</h2>
             <div class="row align-items-center">
                 <!-- Informations de localisation -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Adresse :</h5>
-                    <p><i class="bi bi-geo-alt-fill"></i> Bobo-Dioulasso, BURKINA FASO</p>
-                    <h5 class="mb-3">Horaires d'ouverture :</h5>
-                    <p><i class="bi bi-clock-fill"></i> Lundi - Vendredi : 07h00 - 18h00</p>
-                    <h5 class="mb-3">Contact :</h5>
-                    <p><i class="bi bi-telephone-fill"></i> +226 71 34 55 55</p>
-                    <p><i class="bi bi-envelope-fill"></i> multutraservice@gmail.com</p>
-                </div>
+                    <h5 class="mb-3" data-i18n="addressTitle">Adresse :</h5>
+                    <p><i class="bi bi-geo-alt-fill"></i> <span data-i18n="address">Bobo-Dioulasso, BURKINA FASO</span></p>
+                    <h5 class="mb-3" data-i18n="openingHoursTitle">Horaires d'ouverture :</h5>
+                    <p><i class="bi bi-clock-fill"></i> <span data-i18n="openingHours">Lundi - Vendredi : 07h00 - 18h00</span></p>
+                    <h5 class="mb-3" data-i18n="contactTitle">Contact :</h5>
+                    <p><i class="bi bi-telephone-fill"></i> <span data-i18n="phoneNumber">+226 71 34 55 55</span></p>
+                    <p><i class="bi bi-envelope-fill"></i> <span data-i18n="email">multutraservice@gmail.com</span></p>
+                </div>                
                 <!-- Carte interactive -->
                 <div class="col-md-8">
                     <div class="map-container">
@@ -351,24 +354,24 @@
         <div class="row">
             <!-- À propos -->
             <div class="col-md-4 mb-4">
-                <h5>À propos de nous</h5>
-                <p>
+                <h5 data-i18n="aboutUsTitle">À propos de nous</h5>
+                <p data-i18n="aboutUsDescription">
                     MULTITRAV est spécialisé dans la commercialisation de denrées de qualité et soutient les producteurs et transformateurs depuis près d'une décennie.
                 </p>
-            </div>
+            </div>            
 
             <!-- Contact -->
             <div class="col-md-4 mb-4">
-                <h5>Contactez-nous</h5>
-                <p><i class="bi bi-geo-alt-fill"></i> Bobo-Dioulasso, BURKINA FASO</p>
-                <p><i class="bi bi-telephone-fill"></i> +226 71 34 55 55</p>
-                <p><i class="bi bi-envelope-fill"></i> multutraservice@gmail.com</p>
-                <p><i class="bi bi-clock-fill"></i> Lun-Ven: 07h-18h</p>
-            </div>
+                <h5 data-i18n="contactTitle">Contactez-nous</h5>
+                <p><i class="bi bi-geo-alt-fill"></i> <span data-i18n="address">Bobo-Dioulasso, BURKINA FASO</span></p>
+                <p><i class="bi bi-telephone-fill"></i> <span data-i18n="phone">+226 71 34 55 55</span></p>
+                <p><i class="bi bi-envelope-fill"></i> <span data-i18n="email">multutraservice@gmail.com</span></p>
+                <p><i class="bi bi-clock-fill"></i> <span data-i18n="workingHours">Lun-Ven: 07h-18h</span></p>
+            </div>            
 
             <!-- Réseaux sociaux -->
             <div class="col-md-4 mb-4 text-center">
-                <h5>Suivez-nous</h5>
+                <h5 data-i18n="followus">Suivez-nous</h5>
                 <div class="social-icons">
                     <a href="#" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
                     <a href="#" class="text-light mx-2"><i class="bi bi-whatsapp"></i></a>
@@ -379,11 +382,10 @@
             </div>
         </div>
         <div class="text-center mt-3">
-            <p>&copy; 2024 MULTITRAV. Tous droits réservés.</p>
-        </div>
+            <p>&copy; 2024 <span data-i18n="companyName">MULTITRAV</span>. <span data-i18n="allRightsReserved">Tous droits réservés.</span></p>
+        </div>        
     </div>
 </footer>
-
     
     <!-- Bootstrap JS CDN -->
     <script 
@@ -391,5 +393,6 @@
     </script>
     <!-- JS personnalisé -->
     <script src="script.js"></script>
+    <script src="translations.js"></script>
 </body>
 </html>

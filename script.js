@@ -42,3 +42,28 @@ window.addEventListener('scroll', updateActiveNav);
 
 // Appelle la fonction au chargement pour définir l'état initial
 updateActiveNav();
+
+// Sélecteur de langue
+const languageSelector = document.getElementById("languageSelector");
+
+// Fonction pour changer la langue
+function changeLanguage(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+            element.innerHTML = translations[lang][key]; // Utilise innerHTML pour conserver les balises HTML
+        }
+    });
+    document.documentElement.lang = lang; // Met à jour l'attribut lang du HTML
+}
+
+// Écouteur d'événements pour le changement de langue
+languageSelector.addEventListener("change", (e) => {
+    changeLanguage(e.target.value);
+});
+
+// Charger la langue par défaut au chargement de la page
+window.addEventListener("DOMContentLoaded", () => {
+    changeLanguage(languageSelector.value);
+});
