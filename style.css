@@ -113,6 +113,27 @@ body {
     border-bottom: 2px solid #869d4f; /* Ligne élégante en bas */
 }
 
+/* Styliser le bouton de traduction */
+#languageSelector {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    color: #444;
+}
+
+/* Ajustement pour le rendre aligné verticalement avec les liens */
+#languageSelector {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Effet au survol */
+#languageSelector:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+}
 
 /* Section du carrousel */
 #home {
