@@ -548,6 +548,8 @@ body {
 #back-to-top {
     bottom: 20px; /* Placé en bas à droite */
     right: 20px;
+    background-color: #548b32;
+    border-radius: 50%;
 }
 
 
